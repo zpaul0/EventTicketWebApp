@@ -35,7 +35,7 @@ public class TicketMasterAPI implements ExternalAPI {
 		term = urlEncodeHelper(term);
 		// Make your url query part
 		// like:"apikey=12345&geoPoint=abcd&keyword=music&radius=50"
-		String query = String.format("apikey=%s&geoPoint=%s&keyword=%s&radius=50", API_KEY, geoHash, term);
+		String query = String.format("apikey=%s&geoPoint=%s&keyword=%s&radius=80&size=40", API_KEY, geoHash, term);
 		try {
 			// Create a HTTP connection between your Java application and TicketMaster based
 			// on url
